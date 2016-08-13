@@ -1,5 +1,5 @@
 #include <iostream>
-//#include "string"
+#include <string>
 using namespace std;
 int main()
 {
@@ -13,6 +13,34 @@ int main()
 	int b = 2147483650;
 	cout << b << endl;
 	
+	//Strings
+	
+	string name = "mohamed";
+	cout << name << endl;
+
+
+		// take the input from the user
+		//cin >> name;
+		//cout << name << endl;
+
+		getline(cin,name);
+		int i = name.length();
+		cout << name << "  " << i <<endl;
+		
+
+		string str="We think in generalities, but we live in details.";		// (quoting Alfred N. Whitehead)
+
+		string str2 = str.substr (3,5);			   // "think"
+
+		string str3 = str.substr (3);        // from "think" to the end
+		
+		int pos = str.find("live");      // position of "live" in str
+
+		string str4= str.substr (pos);     // get from "live" to the end
+
+		  std::cout << str2 << '\n' << str4 << '\n';
+
+		/*
 	for (int i = 0; i < 7; i++)
 	{
 		for (int j = 7-i; j > 0; j--)
@@ -20,7 +48,7 @@ int main()
 			cout << "*";
 		}
 		cout << endl;
-	}
+	}*/
 }
 
 
