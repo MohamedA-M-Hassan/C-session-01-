@@ -3,6 +3,16 @@
 using namespace std;
 int main()
 {
+	// size of datatypes
+	cout << sizeof(char)<<endl ;
+	cout << sizeof(int)<<endl;
+	
+	// range of integer and overfolw
+	int a = 2147483647;
+	cout << a << endl;
+	int b = 2147483650;
+	cout << b << endl;
+	
 	for (int i = 0; i < 7; i++)
 	{
 		for (int j = 7-i; j > 0; j--)
